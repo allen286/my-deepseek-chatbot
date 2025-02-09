@@ -3,7 +3,7 @@ import twAnimatePlugin from 'tailwindcss-animate'
 
 export default {
   darkMode: ["class"],
-  content: ["src/app/**/*.{ts,tsx}", "src/components/**/*.{ts,tsx}"],
+  content: ["./src/app/**/*.{js,ts,jsx,tsx,mdx}", "./src/components/**/*.{js,ts,jsx,tsx,mdx}"],
   theme: {
   	extend: {
   		colors: {
@@ -48,8 +48,8 @@ export default {
   			}
   		},
   		borderRadius: {
-  			lg: '`var(--radius)`',
-  			md: '`calc(var(--radius) - 2px)`',
+  			lg: 'var(--radius)',
+  			md: 'calc(var(--radius) - 2px)',
   			sm: 'calc(var(--radius) - 4px)'
   		},
   		keyframes: {

@@ -20,7 +20,7 @@ export function ChatDemo(props: ChatDemoProps) {
   } = useChat(props)
 
   return (
-    <div className="flex h-[500px] w-full">
+    <div className="flex h-[calc(100vh-64px)] w-full">
       <Chat
         className="grow"
         messages={messages}
